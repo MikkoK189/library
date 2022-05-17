@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-bar">
+        <div class="title">
+          Stats:
+          <div id="finished">Finished books:</div>
+          <div id="pagesread">Pages read:</div>
+        </div>
+      </header>
+
+      <div class="sidebar">
+        <h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#faf5ff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-book-open"
+          >
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg
+          >MikkoK's Library
+        </h1>
+        <div class="button-container">
+          <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <label for="title"><b>Title</b></label>
+              <input
+                type="text"
+                placeholder="Enter book title"
+                name="title"
+                required
+              />
+
+              <label for="author"><b>Author</b></label>
+              <input
+                type="text"
+                placeholder="Enter author"
+                name="author"
+                required
+              />
+              <label for="pages"><b>Pages</b></label>
+              <input
+                type="number"
+                placeholder="Amount of pages"
+                name="pages"
+                required
+              />
+              <label for="read"><b>Have you read it?</b></label>
+              <input type="checkbox" name="read" />
+              <button type="submit" class="btn">Submit</button>
+              <svg width="60" height="60" class="button" id="closeform">
+                <circle cx="30" cy="30" r="30" fill="#fb7185" />
+                <text
+                  x="50%"
+                  y="50%"
+                  alignment-baseline="central"
+                  text-anchor="middle"
+                  font-family="sans-serif"
+                  font-size="30"
+                  fill="#fff"
+                >
+                  -
+                </text>
+              </svg>
+            </form>
+          </div>
+          <svg width="60" height="60" class="button" id="addbook">
+            <circle cx="30" cy="30" r="30" fill="#2ecc71" />
+            <text
+              x="50%"
+              y="50%"
+              alignment-baseline="central"
+              text-anchor="middle"
+              font-family="sans-serif"
+              font-size="30"
+              fill="#fff"
+            >
+              +
+            </text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="book-container" id="books">
+        <div class="title">Your books</div>
+        <div class="card" id="0">
+          <div id="title">George R. R. Martin</div>
+          <div id="author">A Game of Thrones</div>
+          <div id="pages">694 pages</div>
+          <input id="read" type="checkbox" />
+          <div id="trash">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-trash"
+            >
+              <polyline points="3 6 5 6 21 6"></polyline>
+              <path
+                d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
