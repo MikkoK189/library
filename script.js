@@ -115,4 +115,3 @@ function checkBoxChecked(event) {
 }
 
 card.parentNode.removeChild(card);
-addBookToLibrary("Game of Thrones", "GRRM", 694, false);
