@@ -54,12 +54,12 @@ body {
 }
 
 .sidebar h1 {
-  position: fixed;
-  overflow-wrap: break-word;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 0.5em;
+  margin: auto;
+  margin-top: 1em;
 }
 
 .sidebar h1 svg {
